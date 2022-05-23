@@ -1,0 +1,29 @@
+* {
+     margin: 0;
+     padding:0;
+     box-sizing: border-box;
+     font-family: sans-serif;
+}
+.navbar {
+    background-color: #013b84;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.navigation {
+    display: flex;    
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding:20px 0;
+}
+.nav-bar ul,li,a {
+    padding-left:25px;
+    color:#fff;
+    list-style:  none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
