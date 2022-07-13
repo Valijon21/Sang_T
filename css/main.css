@@ -1,29 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100&display=swap');
 * {
-     margin: 0;
-     padding:0;
-     box-sizing: border-box;
-     font-family: sans-serif;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 .navbar {
-    background-color: #013b84;
+  background-color: #013b84;
 }
 .container {
-    width: 80%;
-    margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
+  /* border: 2px solid rgb(233, 228, 228); */
+  /* border-radius: 10px; */
 }
 .navigation {
-    display: flex;    
+  display: flex;
 }
 
 .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    padding:20px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
 }
-.nav-bar ul,li,a {
-    padding-left:25px;
-    color:#fff;
-    list-style:  none;
-    text-decoration: none;
-    text-transform: uppercase;
+.nav-bar ul,
+li,
+a {
+  padding-left: 25px;
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* Carusel styles */
+
+
+.news {
+  border-bottom:4px solid #1b4593;
+  font-size: 32px;
+  margin: 32px ;
+  font-weight: 600;
+  color: #1b4593;
+  text-decoration: none;
+padding: 10px;
+}
+/* Main cards */
+.cards {
+  width: 29%;
+
+  border-radius: 5px;
+  margin-top: 20px;
+  box-shadow: 2px 2px 18px rgb(235, 230, 230);
+  margin-left: 40px;
+}
+.cards:hover {
+  box-shadow: 2px 2px 15px black;
+}
+/* carusel slider  */
+#slider{
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+  /* border: 10px solid white; */
+  box-shadow: 0px 0px 5px 2px #ccc;
+}
+button{
+  padding: 20px;
+  border: none;
+  /* background: #37f; */
+  font-size: 30px;
+  color: grey;
+  position: absolute;
+  top: 40%;
+  cursor: pointer;
+  background: none;
+}
+
+.next{
+  border-radius: 10px  0px 0px 10px;
+  margin-left:95%;
+}
+.prew{
+  border-radius: 0px 10px 10px 0px;
+
+}
+
+.card {
+  height: 250px;
+
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  /* align-items: center; */
+}
+.imgs img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.title h5 a {
+  color: #013b84;
+  text-transform: none; 
+  font-size: 15px;
+  font-weight: bold;
+
+  
+}
+.title {
+  padding: 25px;
+ 
+
+}
+/* kursatkich  */
+
+.kursatkich {
+  display: flex;
+
+}
+
+.uqtuvchi-soni {
+  border: 2px solid black;
+}
+.uquvchi-soni {
+  border: 2px solid black;
+
+}
+.olimpiada-yutuq {
+  border: 2px solid black;
+
+}
+
+.
+
+/* rahbariyat haqida */
+
+.content {
+  width: 100%;
+  height: auto;
+  /* border: 3px solid black; */
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.raxbariyat .img {
+  width: 50%;
+  margin: 15px 0;
+  /* border: 3px solid darkblue; */
+  display: flex;
+  flex-wrap: wrap;
+}
+.img img {
+  width: 70%;
+}
+.mal {
+  width: 40%;
+}
+
+.mal {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #848585;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+/* Jadval bulimi */
+.jadval {
+  border-collapse: collapse;
+}
+/* box info */
+.boxinfo,
+.content {
+  display: block;
+  width: 100%;
+  color: #444444;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+}
+.boxinfo p {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+/* otaonlarga */
+.main .content {
+  display: block;
+  width: 100%;
+  color: #495057;
+  font-size: 1rem;
+  text-align: left;
+}
+/* VIRTUAL QABUL BULIMI */
+.main {
+  width: 95%;
+  margin: 0 auto;
+}
+.main h1 {
+  margin: 20px 0;
+}
+.qabul .img {
+  display: flex;
+  justify-content: space-around;
+  width: 350px;
+  height: auto;
+}
+.qabul {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+.form input {
+  display: flex;
+  width: 100%;
+  padding: 10px 16px;
+  margin: 10px 0;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+}
+/* email va telefonni 2ga bulish */
+.parent {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  grid-gap: 20px;
+  align-items: center;
+}
+textarea {
+  display: flex;
+  width: 100%;
+  height: 20vh;
+  padding: 0.375rem 0.75rem;
+  margin: 10px 0;
+  outline: none;
+  border: 1px solid #ced4da;
+  font-size: 1rem;
+  color: #495057;
+  font-weight: 400;
+  border-radius: 6px;
+}
+.btn {
+  width: 100px;
+  padding: 8px 16px;
+  height: 40px;
+  display: block;
+  margin: 10px 0;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 400;
+  border: 1px solid #007bff;
+  color: #007bff;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #fff;
+}
+.btn:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+.form input:hover,
+textarea:hover {
+  border: 1px solid #007bff;
 }
